@@ -1,2 +1,4 @@
 CPP_TDD_Proj.VC.db
 CPP_TDD_Proj.VC.VC.opendb
+_build/*
+.vs/*
