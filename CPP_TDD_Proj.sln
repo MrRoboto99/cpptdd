@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jsoncpp", "jsoncpp-master\j
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcurl", "curl-7.48.0\libcurl.vcxproj", "{B3F57D7D-A2FF-4F94-A439-50FB614CDCBF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{A890C470-911E-4B72-A4AA-6A37E5686902}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -74,5 +76,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D5CD36C-F32D-4A8B-AADB-42717BC6F2BA} = {A890C470-911E-4B72-A4AA-6A37E5686902}
+		{7BDCB377-47E7-49F4-8ADF-E140A4759A78} = {A890C470-911E-4B72-A4AA-6A37E5686902}
+		{333F78B9-1657-4B3F-B7CB-128130962DB7} = {A890C470-911E-4B72-A4AA-6A37E5686902}
+		{B3F57D7D-A2FF-4F94-A439-50FB614CDCBF} = {A890C470-911E-4B72-A4AA-6A37E5686902}
 	EndGlobalSection
 EndGlobal
