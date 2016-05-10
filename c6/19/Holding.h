@@ -11,7 +11,7 @@
 
 #include "PurchaseRecord.h"
 #include <vector>
-#include <algorithm>
+#include <numeric>
 
 class Holding {
 public:

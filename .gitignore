@@ -5,3 +5,4 @@ _build/*
 *.sdf
 CPP_TDD_Proj.VC.opendb
 *.user
+packages/*
