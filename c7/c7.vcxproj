@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCD833FB-1706-4239-8689-CA182CD1E819}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>c5-master</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+		..\googletest-master\googletest\include;
+		..\googletest-master\googlemock\include;
+		..\jsoncpp-master\include;
+		..\jsoncpp-master\include;
+		..\curl-7.48.0\include;
+		%(AdditionalIncludeDirectories)
+	</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>
+		CURL_STATICLIB;
+		%(PreprocessorDefinitions)
+	</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\curl-7.48.0\libcurl.vcxproj">
+      <Project>{b3f57d7d-a2ff-4f94-a439-50fb614cdcbf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\googletest-master\googlemock\msvc\2015\gmock.vcxproj">
+      <Project>{9d5cd36c-f32d-4a8b-aadb-42717bc6f2ba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\googletest-master\googlemock\msvc\2015\gmock_main.vcxproj">
+      <Project>{7bdcb377-47e7-49f4-8adf-e140a4759a78}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\jsoncpp-master\jsoncpp.vcxproj">
+      <Project>{333f78b9-1657-4b3f-b7cb-128130962db7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="22\libraryTest\BarcodeUtilTest.cpp" />
+    <ClCompile Include="22\libraryTest\BookTest.cpp" />
+    <ClCompile Include="22\libraryTest\BranchAccessTest.cpp" />
+    <ClCompile Include="22\libraryTest\BranchServiceTest.cpp" />
+    <ClCompile Include="22\libraryTest\BranchTest.cpp" />
+    <ClCompile Include="22\libraryTest\CatalogTest.cpp" />
+    <ClCompile Include="22\libraryTest\ClassificationServiceTest.cpp" />
+    <ClCompile Include="22\libraryTest\HoldingBarcodeTest.cpp" />
+    <ClCompile Include="22\libraryTest\HoldingServiceTest.cpp" />
+    <ClCompile Include="22\libraryTest\HoldingTest.cpp" />
+    <ClCompile Include="22\libraryTest\InventoryReportTest.cpp" />
+    <ClCompile Include="22\libraryTest\KeyedFilePersistenceTest.cpp" />
+    <ClCompile Include="22\libraryTest\KeyedMemoryPersistenceTest.cpp" />
+    <ClCompile Include="22\libraryTest\library.cpp" />
+    <ClCompile Include="22\libraryTest\main.cpp" />
+    <ClCompile Include="22\libraryTest\PatronAccessTest.cpp" />
+    <ClCompile Include="22\libraryTest\PatronServiceTest.cpp" />
+    <ClCompile Include="22\libraryTest\PatronTest.cpp" />
+    <ClCompile Include="22\libraryTest\PersistenceTest.cpp" />
+    <ClCompile Include="22\libraryTest\PortfolioTest.cpp" />
+    <ClCompile Include="22\libraryTest\ReportMailerTest.cpp" />
+    <ClCompile Include="22\libraryTest\RomanTest.cpp" />
+    <ClCompile Include="22\libraryTest\ScannerStateCheckinTest.cpp" />
+    <ClCompile Include="22\libraryTest\ScannerStateCheckoutTest.cpp" />
+    <ClCompile Include="22\libraryTest\ScannerStateInventoryTest.cpp" />
+    <ClCompile Include="22\libraryTest\ScannerStateWaitingTest.cpp" />
+    <ClCompile Include="22\libraryTest\ScannerTest.cpp" />
+    <ClCompile Include="22\libraryTest\ScannerTestData.cpp" />
+    <ClCompile Include="22\libraryTest\StreamLineReaderTest.cpp" />
+    <ClCompile Include="22\libraryTest\TimestampSourceTest.cpp" />
+    <ClCompile Include="22\libraryTest\VectorReaderTest.cpp" />
+    <ClCompile Include="22\library\Book.cpp" />
+    <ClCompile Include="22\library\Branch.cpp" />
+    <ClCompile Include="22\library\BranchAccess.cpp" />
+    <ClCompile Include="22\library\BranchService.cpp" />
+    <ClCompile Include="22\library\Catalog.cpp" />
+    <ClCompile Include="22\library\ClassificationService.cpp" />
+    <ClCompile Include="22\library\Endpoint.cpp" />
+    <ClCompile Include="22\library\EndpointValidator.cpp" />
+    <ClCompile Include="22\library\Holding.cpp" />
+    <ClCompile Include="22\library\HoldingService.cpp" />
+    <ClCompile Include="22\library\InventoryReport.cpp" />
+    <ClCompile Include="22\library\MailDestination.cpp" />
+    <ClCompile Include="22\library\MailMessage.cpp" />
+    <ClCompile Include="22\library\Patron.cpp" />
+    <ClCompile Include="22\library\PatronAccess.cpp" />
+    <ClCompile Include="22\library\PatronService.cpp" />
+    <ClCompile Include="22\library\RomanConverter.cpp" />
+    <ClCompile Include="22\library\Scanner.cpp" />
+    <ClCompile Include="22\library\ScannerState.cpp" />
+    <ClCompile Include="22\library\ScannerStateCheckin.cpp" />
+    <ClCompile Include="22\library\ScannerStateCheckout.cpp" />
+    <ClCompile Include="22\library\ScannerStateInventory.cpp" />
+    <ClCompile Include="22\library\ScannerStateWaiting.cpp" />
+    <ClCompile Include="22\library\StreamLineReader.cpp" />
+    <ClCompile Include="22\library\TimestampSource.cpp" />
+    <ClCompile Include="22\library\Transport.cpp" />
+    <ClCompile Include="22\linereader\LineReaderTest.cpp" />
+    <ClCompile Include="22\linereader\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="22\libraryTest\ASSERT_CURRENT_STATE.h" />
+    <ClInclude Include="22\libraryTest\BranchTestData.h" />
+    <ClInclude Include="22\libraryTest\PersistenceTest.h" />
+    <ClInclude Include="22\libraryTest\ScannerTestData.h" />
+    <ClInclude Include="22\libraryTest\TestScanner.h" />
+    <ClInclude Include="22\libraryTest\TestSerializable.h" />
+    <ClInclude Include="22\library\include\BarcodeUtil.h" />
+    <ClInclude Include="22\library\include\Book.h" />
+    <ClInclude Include="22\library\include\Branch.h" />
+    <ClInclude Include="22\library\include\BranchAccess.h" />
+    <ClInclude Include="22\library\include\BranchService.h" />
+    <ClInclude Include="22\library\include\Catalog.h" />
+    <ClInclude Include="22\library\include\ClassificationData.h" />
+    <ClInclude Include="22\library\include\ClassificationService.h" />
+    <ClInclude Include="22\library\include\CreditVerifier.h" />
+    <ClInclude Include="22\library\include\DisplayListener.h" />
+    <ClInclude Include="22\library\include\Endpoint.h" />
+    <ClInclude Include="22\library\include\EndpointValidator.h" />
+    <ClInclude Include="22\library\include\Holding.h" />
+    <ClInclude Include="22\library\include\HoldingBarcode.h" />
+    <ClInclude Include="22\library\include\HoldingService.h" />
+    <ClInclude Include="22\library\include\InvalidBarcodeException.h" />
+    <ClInclude Include="22\library\include\InventoryReport.h" />
+    <ClInclude Include="22\library\include\KeyedFilePersistence.h" />
+    <ClInclude Include="22\library\include\KeyedMemoryPersistence.h" />
+    <ClInclude Include="22\library\include\MailDestination.h" />
+    <ClInclude Include="22\library\include\MailMessage.h" />
+    <ClInclude Include="22\library\include\NCC1701ADisplay.h" />
+    <ClInclude Include="22\library\include\Patron.h" />
+    <ClInclude Include="22\library\include\PatronAccess.h" />
+    <ClInclude Include="22\library\include\PatronNotFoundException.h" />
+    <ClInclude Include="22\library\include\PatronService.h" />
+    <ClInclude Include="22\library\include\Persistence.h" />
+    <ClInclude Include="22\library\include\Report.h" />
+    <ClInclude Include="22\library\include\ReportMailer.h" />
+    <ClInclude Include="22\library\include\RomanConverter.h" />
+    <ClInclude Include="22\library\include\Scanner.h" />
+    <ClInclude Include="22\library\include\ScannerState.h" />
+    <ClInclude Include="22\library\include\ScannerStateCheckin.h" />
+    <ClInclude Include="22\library\include\ScannerStateCheckout.h" />
+    <ClInclude Include="22\library\include\ScannerStateInventory.h" />
+    <ClInclude Include="22\library\include\ScannerStateWaiting.h" />
+    <ClInclude Include="22\library\include\Serializable.h" />
+    <ClInclude Include="22\library\include\StreamLineReader.h" />
+    <ClInclude Include="22\library\include\TimestampSource.h" />
+    <ClInclude Include="22\library\include\Transport.h" />
+    <ClInclude Include="22\library\include\VectorReader.h" />
+    <ClInclude Include="22\library\include\VectorWriter.h" />
+    <ClInclude Include="22\linereader\LineReader.h" />
+    <ClInclude Include="22\linereader\linux_syscall_support.h" />
+  </ItemGroup>
+  <Import Project="..\props\common.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

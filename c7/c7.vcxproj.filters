@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{695cb86c-47ed-4667-8e81-1215d6af0b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b2bd48c0-b861-4af2-8200-74a8e83e528c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\library">
+      <UniqueIdentifier>{825afccf-e875-4a44-9440-99681c536121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\library">
+      <UniqueIdentifier>{f2355f91-122d-4689-a940-6c56b5f1db8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libraryTest">
+      <UniqueIdentifier>{d1dbf977-b756-485a-8280-7a18a6ae2c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libraryTest">
+      <UniqueIdentifier>{0d7dff63-2ec7-4386-8663-e80907381b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\linereader">
+      <UniqueIdentifier>{e2176c66-cad2-483f-8c98-41a4d55c8e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\linereader">
+      <UniqueIdentifier>{7189395b-3a6f-4fa9-9b0b-10ef53a2fd17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="22\library\Book.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Branch.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\BranchAccess.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\BranchService.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Catalog.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\ClassificationService.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Endpoint.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\EndpointValidator.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Holding.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\HoldingService.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\InventoryReport.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\MailDestination.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\MailMessage.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Patron.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\PatronAccess.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\PatronService.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\RomanConverter.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Scanner.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\ScannerState.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\ScannerStateCheckin.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\ScannerStateCheckout.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\ScannerStateInventory.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\ScannerStateWaiting.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\StreamLineReader.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\TimestampSource.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\library\Transport.cpp">
+      <Filter>Source Files\library</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\BarcodeUtilTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\BookTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\BranchAccessTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\BranchServiceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\BranchTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\CatalogTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ClassificationServiceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\HoldingBarcodeTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\HoldingServiceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\HoldingTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\InventoryReportTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\KeyedFilePersistenceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\KeyedMemoryPersistenceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\library.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\main.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\PatronAccessTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\PatronServiceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\PatronTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\PersistenceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\PortfolioTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ReportMailerTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\RomanTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ScannerStateCheckinTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ScannerStateCheckoutTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ScannerStateInventoryTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ScannerStateWaitingTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ScannerTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\ScannerTestData.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\StreamLineReaderTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\TimestampSourceTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\libraryTest\VectorReaderTest.cpp">
+      <Filter>Source Files\libraryTest</Filter>
+    </ClCompile>
+    <ClCompile Include="22\linereader\LineReaderTest.cpp">
+      <Filter>Source Files\linereader</Filter>
+    </ClCompile>
+    <ClCompile Include="22\linereader\main.cpp">
+      <Filter>Source Files\linereader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="22\library\include\BarcodeUtil.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Book.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Branch.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\BranchAccess.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\BranchService.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Catalog.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ClassificationData.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ClassificationService.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\CreditVerifier.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\DisplayListener.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Endpoint.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\EndpointValidator.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Holding.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\HoldingBarcode.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\HoldingService.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\InvalidBarcodeException.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\InventoryReport.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\KeyedFilePersistence.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\KeyedMemoryPersistence.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\MailDestination.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\MailMessage.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\NCC1701ADisplay.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Patron.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\PatronAccess.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\PatronNotFoundException.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\PatronService.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Persistence.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Report.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ReportMailer.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\RomanConverter.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Scanner.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ScannerState.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ScannerStateCheckin.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ScannerStateCheckout.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ScannerStateInventory.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\ScannerStateWaiting.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Serializable.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\StreamLineReader.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\TimestampSource.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\Transport.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\VectorReader.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\library\include\VectorWriter.h">
+      <Filter>Header Files\library</Filter>
+    </ClInclude>
+    <ClInclude Include="22\libraryTest\ASSERT_CURRENT_STATE.h">
+      <Filter>Header Files\libraryTest</Filter>
+    </ClInclude>
+    <ClInclude Include="22\libraryTest\BranchTestData.h">
+      <Filter>Header Files\libraryTest</Filter>
+    </ClInclude>
+    <ClInclude Include="22\libraryTest\PersistenceTest.h">
+      <Filter>Header Files\libraryTest</Filter>
+    </ClInclude>
+    <ClInclude Include="22\libraryTest\ScannerTestData.h">
+      <Filter>Header Files\libraryTest</Filter>
+    </ClInclude>
+    <ClInclude Include="22\libraryTest\TestScanner.h">
+      <Filter>Header Files\libraryTest</Filter>
+    </ClInclude>
+    <ClInclude Include="22\libraryTest\TestSerializable.h">
+      <Filter>Header Files\libraryTest</Filter>
+    </ClInclude>
+    <ClInclude Include="22\linereader\LineReader.h">
+      <Filter>Header Files\linereader</Filter>
+    </ClInclude>
+    <ClInclude Include="22\linereader\linux_syscall_support.h">
+      <Filter>Header Files\linereader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
