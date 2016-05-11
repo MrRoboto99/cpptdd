@@ -26,7 +26,7 @@ void HoldingService::DeleteAll()
    Catalog::DeleteAll();
 }
 
-unsigned int HoldingService::InventorySize() const
+size_t HoldingService::InventorySize() const
 {
    return mCatalog.Size();
 }

@@ -25,7 +25,7 @@ vector<Holding>* Catalog::Holdings()
     return mHoldings;
 }
 
-unsigned int Catalog::Size() const
+size_t Catalog::Size() const
 {
 	return Catalog::Holdings()->size();
 }

@@ -33,7 +33,7 @@ public:
         KeyedMemoryPersistence::ClearAll();
     }
 
-    unsigned int Size() const 
+	size_t Size() const
     { 
         return mData.size(); 
     }

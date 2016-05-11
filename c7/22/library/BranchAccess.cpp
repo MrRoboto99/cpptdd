@@ -52,7 +52,7 @@ bool BranchAccess::Find(Branch& branch) const
 	return true;
 }
 
-int BranchAccess::Size() const
+size_t BranchAccess::Size() const
 {
     return mPersister->Size();
 }

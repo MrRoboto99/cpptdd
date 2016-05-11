@@ -17,7 +17,7 @@ void Portfolio::Purchase(
 void Portfolio::Sell(
       const string& symbol, unsigned int shareCount, const date& transactionDate) {
    if (shareCount > ShareCount(symbol)) throw InvalidSellException();
-   Transact(symbol, -shareCount, transactionDate);
+   Transact(symbol, -static_cast<int>(shareCount), transactionDate);
 }
 
 void Portfolio::Transact(

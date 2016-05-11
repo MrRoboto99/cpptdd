@@ -15,7 +15,7 @@ BranchService::~BranchService(void)
 {
 }
 
-short BranchService::BranchCount() const
+size_t BranchService::BranchCount() const
 {
     return mBranchAccess.Size();
 }

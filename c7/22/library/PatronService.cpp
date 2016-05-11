@@ -55,7 +55,7 @@ bool PatronService::Find(Patron& patron) const
     return mPatronAccess.Find(patron);
 }
 
-short PatronService::PatronCount() const
+size_t PatronService::PatronCount() const
 {
     return mPatronAccess.Size();
 }

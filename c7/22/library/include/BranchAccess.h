@@ -27,7 +27,7 @@ public:
     static std::string DataFileName();
 
     bool Find(Branch&) const;
-    int Size() const;
+	size_t Size() const;
     bool ExistsWithName(const std::string& name) const;
     void Save(Branch&);
     void DeleteAll();

@@ -24,7 +24,7 @@ Holding::Holding(const string& barcode)
         throw InvalidBarcodeException();
     }
     vector<string> barcodeParts;
-    boost::split(barcodeParts, barcode, boost::is_any_of(":"));
+    boost::split(barcodeParts, barcode, [](char c) { return c == ':'; });
     string classification = barcodeParts[0];
     mCopyNumber = atoi(barcodeParts[1].c_str());
     mClassification = classification;

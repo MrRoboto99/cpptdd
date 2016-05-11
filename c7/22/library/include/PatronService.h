@@ -34,7 +34,7 @@ public:
     void Add(const std::string& name, int id, const std::string& cardNumber="");
     void Add(const Patron& patron);
     bool Find(Patron& patron) const;
-    short PatronCount() const;
+    size_t PatronCount() const;
     void Update(const Patron& patron);
     std::vector<Patron> GetAll() const; // bad!
 

@@ -27,7 +27,7 @@ public:
     {
     }
 
-    unsigned int Size() const 
+	size_t Size() const
     { 
         return 0; 
     }

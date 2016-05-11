@@ -22,7 +22,7 @@ public:
 
     static void DeleteAll();
 
-	unsigned int Size() const;
+	size_t Size() const;
 	void Add(Holding& holding);
 	void Update(Holding& holding);
 	void FindByClassification(const std::string&, std::set<Holding>& holdings) const;

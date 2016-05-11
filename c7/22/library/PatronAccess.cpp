@@ -75,7 +75,7 @@ vector<Patron>::iterator PatronAccess::End() const
 	return PatronAccess::Patrons()->end();
 }
 
-int PatronAccess::Size() const
+size_t PatronAccess::Size() const
 {
 	return PatronAccess::Patrons()->size();
 }

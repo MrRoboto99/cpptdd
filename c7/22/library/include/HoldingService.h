@@ -40,7 +40,7 @@ public:
    void Transfer(Holding&, Branch&);
    void Transfer(const std::string& barCode, const std::string& branchId);
 
-   unsigned int InventorySize() const;
+   size_t InventorySize() const;
    virtual bool ExistsWithBarcode(const std::string& barCode) const;
    virtual bool IsAvailable(const std::string& barCode) const;
    bool FindByBarCode(Holding&) const;

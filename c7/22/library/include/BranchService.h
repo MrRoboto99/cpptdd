@@ -25,7 +25,7 @@ public:
 
     void Add(Branch& branch);
     std::string Add(const std::string& name, const std::string& address);
-    short BranchCount() const;
+	size_t BranchCount() const;
     bool Find(Branch& branch) const;
     bool ExistsWithName(const std::string& name) const;
 

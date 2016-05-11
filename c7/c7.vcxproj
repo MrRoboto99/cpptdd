@@ -159,17 +159,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\curl-7.48.0\libcurl.vcxproj">
-      <Project>{b3f57d7d-a2ff-4f94-a439-50fb614cdcbf}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\googletest-master\googlemock\msvc\2015\gmock.vcxproj">
       <Project>{9d5cd36c-f32d-4a8b-aadb-42717bc6f2ba}</Project>
     </ProjectReference>
     <ProjectReference Include="..\googletest-master\googlemock\msvc\2015\gmock_main.vcxproj">
       <Project>{7bdcb377-47e7-49f4-8adf-e140a4759a78}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\jsoncpp-master\jsoncpp.vcxproj">
-      <Project>{333f78b9-1657-4b3f-b7cb-128130962db7}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

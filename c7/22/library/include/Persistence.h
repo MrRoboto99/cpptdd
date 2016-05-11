@@ -24,7 +24,7 @@ public:
     Persistence(const std::string& table) : mTable(table) {}
     virtual ~Persistence(void) {}
 
-    virtual unsigned int Size() const=0;
+    virtual size_t Size() const=0;
     virtual void Add(T&)=0;
     virtual void Clear()=0;
     virtual std::auto_ptr<T> Get(const std::string& id) const=0;

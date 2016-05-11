@@ -22,7 +22,7 @@ public:
 	void Save(const Patron&);
 	bool Find(Patron&) const;
 	Patron& FindByName(const std::string&) const;
-	int Size() const;
+	size_t Size() const;
 	void Update(const Patron&);
 	std::vector<Patron> GetAll() const;
 

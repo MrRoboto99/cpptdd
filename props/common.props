@@ -4,6 +4,12 @@
   <PropertyGroup>
     <IntDir>$(SolutionDir)_build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <OutDir>$(SolutionDir)_build\$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>  
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>  
   
 </Project>
