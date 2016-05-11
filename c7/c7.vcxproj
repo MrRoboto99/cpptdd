@@ -86,9 +86,7 @@
       <AdditionalIncludeDirectories>
 		..\googletest-master\googletest\include;
 		..\googletest-master\googlemock\include;
-		..\jsoncpp-master\include;
-		..\jsoncpp-master\include;
-		..\curl-7.48.0\include;
+    .\22\library\include;
 		%(AdditionalIncludeDirectories)
 	</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>
@@ -188,13 +186,17 @@
     <ClCompile Include="22\libraryTest\InventoryReportTest.cpp" />
     <ClCompile Include="22\libraryTest\KeyedFilePersistenceTest.cpp" />
     <ClCompile Include="22\libraryTest\KeyedMemoryPersistenceTest.cpp" />
-    <ClCompile Include="22\libraryTest\library.cpp" />
+    <ClCompile Include="22\libraryTest\library.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="22\libraryTest\main.cpp" />
     <ClCompile Include="22\libraryTest\PatronAccessTest.cpp" />
     <ClCompile Include="22\libraryTest\PatronServiceTest.cpp" />
     <ClCompile Include="22\libraryTest\PatronTest.cpp" />
     <ClCompile Include="22\libraryTest\PersistenceTest.cpp" />
-    <ClCompile Include="22\libraryTest\PortfolioTest.cpp" />
+    <ClCompile Include="22\libraryTest\PortfolioTest.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="22\libraryTest\ReportMailerTest.cpp" />
     <ClCompile Include="22\libraryTest\RomanTest.cpp" />
     <ClCompile Include="22\libraryTest\ScannerStateCheckinTest.cpp" />
@@ -232,8 +234,12 @@
     <ClCompile Include="22\library\StreamLineReader.cpp" />
     <ClCompile Include="22\library\TimestampSource.cpp" />
     <ClCompile Include="22\library\Transport.cpp" />
-    <ClCompile Include="22\linereader\LineReaderTest.cpp" />
-    <ClCompile Include="22\linereader\main.cpp" />
+    <ClCompile Include="22\linereader\LineReaderTest.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="22\linereader\main.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="22\libraryTest\ASSERT_CURRENT_STATE.h" />
@@ -287,8 +293,20 @@
     <ClInclude Include="22\linereader\LineReader.h" />
     <ClInclude Include="22\linereader\linux_syscall_support.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="..\props\common.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\boost.1.60.0.0\build\native\boost.targets" Condition="Exists('..\packages\boost.1.60.0.0\build\native\boost.targets')" />
+    <Import Project="..\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets" Condition="Exists('..\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\boost.1.60.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.60.0.0\build\native\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_date_time-vc140.1.60.0.0\build\native\boost_date_time-vc140.targets'))" />
+  </Target>
 </Project>

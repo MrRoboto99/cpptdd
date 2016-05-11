@@ -357,4 +357,7 @@
       <Filter>Header Files\linereader</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>
